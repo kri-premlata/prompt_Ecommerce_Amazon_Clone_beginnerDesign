@@ -1,0 +1,657 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+.container{
+    width: 100vmax;
+    height: 100vmax;
+    /* background-color: bisque; */
+    position: relative;
+}
+.nav1{
+    width: 100%;
+    height: 5%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bt1{
+   width: 15%;
+   height: 90%;
+   background-image: url(https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.bt1:hover{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border: 1.5px solid white;
+}
+.bt2{
+    width: 10%;
+    height: 80%;
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
+}
+.bt2:hover{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border: 1.5px solid white;
+}
+#options{
+    width: 50px;
+    height: 70%;
+    background-color: rgb(114, 110, 110);
+    padding: 0px 5px;
+    color: white;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+    transform: translateX(20px);
+}
+#options:hover{
+   transition: 0.25s all;
+   background-color: grey;
+}
+input{
+    width: 30%;
+    height: 70%;
+    padding: 20px;
+}
+.bt3{
+    height: 70%;
+    width: 5%;
+    border: none;
+    background-color: orange;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    transform: translateX(-20px);
+   
+}
+.bt3:hover{
+    transition: 0.25s all; 
+    background-color: rgba(241, 158, 64, 0.966);
+}
+.bt3 i{
+    font-size: 30px;
+    color: white;
+}
+#lang{
+    width: 50px;
+    height: 70%;
+    background-color: black;
+    padding: 0px 5px;
+    color: white;
+}
+#lang:hover{
+    border: 1.5px solid white;
+}
+.bt4{
+    height: 70%;
+    width: 50px;
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+}
+.bt4:hover{
+    border: 1.5px solid white;
+
+}
+.bt5{
+    height: 70%;
+    width: 10%;
+    font-size: 15px;
+    background: none;
+    color: white;
+    border: none;
+}
+.bt5:hover{
+    border: 1.5px solid white;
+}
+.bt5 span{
+    font-weight: 900;
+}
+.bt6{
+    width: 5%;
+    height: 70%;
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+}
+.bt6:hover{
+    border: 1.5px solid white;
+}
+.nav2{
+    width: 100%;
+    height: 3%;
+    background-color:black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav2 button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+.nav2 button:hover{
+    cursor: pointer;
+    transition: 0.25s all;
+    border: 1.5px solid white;
+}
+.nav3{
+    width: 100%;
+    height: 3%;
+    background-color: white;  
+    display: flex;
+    align-items: end;
+}
+#bs{
+    border-bottom: 2px solid orange;
+}
+.nav3 a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px; 
+    margin: 0px 30px;
+    
+}
+.nav3 a:hover{
+    border-bottom: 2px solid rgba(231, 159, 26, 0.918);
+    color:  rgba(189, 126, 9, 0.877);
+}
+.heading{
+    width: 100%;
+    height: 5%;
+    /* background-color: aquamarine; */
+    font-family: Helvetica;
+    padding: 5px 20px;
+}
+.heading h1{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.863);
+    font-size: 30px;
+}
+.heading p{
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 14px;
+}
+.sidebar{
+    height: 50vmax;
+    width: 18%;
+    /* background-color: rgba(177, 114, 19, 0.53); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 5px;
+    border-right: 2px solid rgb(183, 183, 183);
+}
+.sidebar a{
+    text-decoration: none;
+    color: black; 
+    margin: 0px 10px;
+}
+.sidebar a:hover{
+    border-bottom: 2px solid rgba(231, 159, 26, 0.918);
+   
+}
+.sidebar h3{
+    font-family: Helvetica;
+    margin-bottom: 4%;
+    margin-left: 10%;
+
+}
+.content1{
+    width: 82%;
+    height: 5%;
+    /* background-color: rgba(102, 51, 153, 0.475); */
+    position: absolute;
+    left: 18%;
+    top: 16%;
+    display: flex;
+    align-items: center;
+}
+.content1 h1{
+    margin-left: 20px;
+    
+}
+.content1 a{
+      margin-top: 2%;
+      margin-left: 10px;
+      
+}
+.row1{
+    width: 82%;
+    height: 30%;
+    /* background-color: rgba(78, 214, 94, 0.475); */
+    position: absolute;
+    left: 18%;
+    top: 21%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 25px;
+}
+.btn1{
+    width: 4%;
+    height: 10%;
+    /* background-color: blueviolet; */
+    position: absolute;
+    left: 0;
+    top: 40%;
+    border: 1.5px solid rgba(128, 128, 128, 0.776);
+    color: rgb(28, 27, 27);
+    font-size: 30px;
+    /* border: none; */
+    border-radius: 10px;
+    background:none;
+    left: 0.2%;
+}
+.btn1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.btn1 i{
+    color: grey;
+}
+.box1{
+    width: 30%;
+    height: 100%;
+    /* background-color: goldenrod; */
+    /* margin-left: 30px; */
+    position: relative;
+}
+.pic1{
+    width: 100%;
+    height: 62%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 12%;
+    background-image: url(https://www.lancome.in/dw/image/v2/BJSQ_PRD/on/demandware.static/-/Sites-lancome-ng-master-catalog/en_IN/dw3ed982a1/images/new-packshot/Skincare/A02394-LAC/Lancome-Cream-HydraZen-50ml-A02394-LAC-3.jpg?sw=698&sh=698&sm=cut&sfrm=jpg&q=70);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic1:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.stars1{
+    width: 70%;
+    height: 10%;
+    /* background-color: rgb(74, 76, 230); */
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.s1{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s2{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s3{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s4{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s5{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(255, 255, 0);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.box1 button{
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    font-size: 20px;
+    background-color: rgba(255, 166, 0, 0.886);
+    border: none;
+    border-radius: 20px;
+
+}
+.box1 button:hover{
+    background-color:rgb(248, 180, 53);
+    color: white;  
+}
+
+#hash1{
+    width: 15%;
+    height: 10%;
+    background-color: rgba(187, 15, 15, 0.781);
+    margin-left: 30px;
+    margin-top: 5px;
+    clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+    color: white;
+}
+.box1 div > h5{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0px;
+   
+}
+
+.btn2{
+    width: 3%;
+    height: 10%;
+    /* background-color: blueviolet; */
+    position: absolute;
+    right: 0;
+    top: 40%;
+    border: 1.5px solid grey;
+    color: rgb(28, 27, 27);
+    font-size: 30px;
+    border-radius: 10px;
+    background:none;
+    right: 1.5%;
+}
+.btn2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.btn2 i{
+    color: grey;
+}
+.content2{
+    width: 82%;
+    height: 5%;
+    /* background-color: rgba(5, 164, 61, 0.475); */
+    position: absolute;
+    left: 18%;
+    top: 51%;
+    display: flex;
+    align-items: center;
+}
+.content2 h1{
+    margin-left: 20px;
+}
+.content2 a{
+      margin-top: 2%;
+      margin-left: 10px;
+      
+}
+.box2{
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(16, 174, 137); */
+    position: relative;
+    
+}
+.pic2{
+    width: 100%;
+    height: 62%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 12%;
+    background-image: url(https://cdn3.foxy.in/pictures/product/image/64496/299821/plum-touch-n-go-lip-cheek-tint.jpg?nan=nan&format=webp&width=1024);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic2:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.stars2{
+        width: 70%;
+        height: 10%;
+        /* background-color: rgb(74, 76, 230); */
+        position: absolute;
+        bottom: 15%;
+        left: 15%;
+        display: flex;
+        justify-content: space-evenly;
+    
+}
+.s6{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s7{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s8{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s9{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s10{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.box2 button{
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 166, 0, 0.941);
+}
+.box2 button:hover{
+    background-color:rgb(248, 180, 53);
+    color: white;  
+}
+#hash2{
+    width: 15%;
+    height: 10%;
+    background-color: rgba(187, 15, 15, 0.781);
+    margin-left: 30px;
+    margin-top: 5px;
+    clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+    color: white;
+}
+.box2 div > h5{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0px;
+   
+}
+.box3{
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(8, 142, 48); */
+    /* margin-right: 50px; */
+    position: relative;
+}
+.pic3{
+    width: 100%;
+    height: 62%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 12%;
+    background-image: url(https://www.lancome.in/dw/image/v2/BJSQ_PRD/on/demandware.static/-/Sites-lancome-ng-master-catalog/default/dw3fd22c37/images/new-packshot/clarifique-refining-dual-essence-lancome-skincare.jpg?sw=698&sh=698&sm=cut&sfrm=jpg&q=70);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic3:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.stars3{
+    width: 70%;
+    height: 10%;
+    /* background-color: rgb(74, 76, 230); */
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.s11{
+width: 20%;
+height: 100%;
+background-color: yellow;
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s12{
+width: 20%;
+height: 100%;
+background-color: yellow;
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s13{
+width: 20%;
+height: 100%;
+background-color: yellow;
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s14{
+width: 20%;
+height: 100%;
+background-color: yellow;
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.s15{
+width: 20%;
+height: 100%;
+background-color: yellow;
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.box3 button{
+padding: 10px;
+width: 100%;
+position: absolute;
+bottom: 2%;
+font-size: 20px;
+border: none;
+border-radius: 20px;
+background-color: rgba(255, 166, 0, 0.941);
+}
+.box3 button:hover{
+    background-color:rgb(248, 180, 53);
+    color: white;  
+}
+#hash3{
+    width: 15%;
+    height: 10%;
+    background-color: rgba(187, 15, 15, 0.781);
+    margin-left: 30px;
+    margin-top: 5px;
+    clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+    color: white;
+}
+.box3 div > h5{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0px;
+   
+}
+.row2{
+    width: 82%;
+    height: 30%;
+    /* background-color: rgba(60, 60, 199, 0.475); */
+    position: absolute;
+    left: 18%;
+    top: 56%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 25px;
+}
+.pic4{
+    width: 100%;
+    height: 62%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 12%;
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-storage-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692854440227);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic4:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.pic5{
+    width: 100%;
+    height: 62%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 12%;
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue-wifi?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1670856033679);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic5:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.pic6{
+    width: 100%;
+    height: 62%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 12%;
+    background-image: url(https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MT2Y3ref_VW_34FR+watch-case-41-aluminum-pink-nc-s9_VW_34FR+watch-face-41-aluminum-pink-s9_VW_34FR_WF_CO_GEO_IN?wid=5120&hei=3280&bgc=fafafa&trim=1&fmt=p-jpg&qlt=80&.v=Z0VkY0NhREJ6WjFzb3N5VEYrKzFoQjJXVW9BNEhuTURaNVlmRjZxRXZQeXlESTJEU21VQ3kwMTlnSk9SWXc3T1lmQTM3dWwxOEVOeWkrSnZJS3hUWHNZUk12MUVIVHRxUC9tRlNJeUZ4LzNvRFBDZ2ppL3VKbG5SaHlPeG9SOGNWRGRkNWd6OXhEb2lBTXYxZnpxbGdLMCtHMVlHSGttWG40UU14R241ekFhYmZuSTdFUnErS0g3SWYxazQrNDdyRzE3K0tORmZaUy9vOVdqTEp2dmJNMGdNL3BvRkdKVDVQdS91YnVnbnJuZ3JPZ0xXb3dPVUV6bytXY1hzR2F1cg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic6:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+/* .row3{
+    width: 82%;
+    height: 30%;
+    background-color: rgba(188, 59, 44, 0.475);
+    position: absolute;
+    left: 18%;
+    top: 81;
+}
+.row4{
+    width: 82%;
+    height: 30%;
+    background-color: rgba(238, 47, 101, 0.475);
+    position: absolute;
+    left: 18%;
+    top: 111%;
+} */
+
+
+   
